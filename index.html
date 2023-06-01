@@ -391,8 +391,8 @@
               <div class="col-md-10">
                 <div class="card-body">
                   <form
-                    action="https://formspree.io/example@email.com"
                     method="POST"
+                    action="https://script.google.com/macros/s/AKfycbzlh2DOlPQk-bOx6D4jSTN_Sb03868ySPB7yE2a5ywwFMtniVbgYtwbjbvf3Vq2jQ/exec"
                   >
                     <div class="row">
                       <div class="col md-6 pb-3">
@@ -402,7 +402,7 @@
                             class="form-control"
                             id="name-input"
                             type="text"
-                            name="name"
+                            name="FullName"
                             required="required"
                           />
                         </div>
@@ -414,7 +414,7 @@
                             class="form-control"
                             id="email-input"
                             type="email"
-                            name="_replyto"
+                            name="Email"
                             required="required"
                           />
                         </div>
@@ -427,7 +427,7 @@
                           <select
                             class="form-control"
                             id="guest-input"
-                            name="guest"
+                            name="#Guests"
                           >
                             <option value="1">Ένα</option>
                             <option value="2">Δύο</option>
@@ -442,11 +442,11 @@
                           <select
                             class="form-control"
                             id="events-input"
-                            name="events"
+                            name="Are you joining?"
                           >
-                            <option value="all-event">Τελετή & Δεξίωση</option>
+                            <option value="all-events">Τελετή & Δεξίωση</option>
                             <option value="wedding-ceremony">Τελετή</option>
-                            <option value="reception-party">Δεξίωση</option>
+                            <option value="party only">Δεξίωση</option>
                           </select>
                         </div>
                       </div>
@@ -458,7 +458,7 @@
                           <textarea
                             class="form-control"
                             id="message-input"
-                            name="message"
+                            name="Full Message"
                             rows="4"
                           ></textarea>
                         </div>
