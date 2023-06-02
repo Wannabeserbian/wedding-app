@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <base target="_top" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -87,7 +88,7 @@
         <div class="ww-nav-bar sticky-top bg-light">
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-              <a href="#">
+              <a href="">
                 <img width="200" height="200" src="images/logo.png" />
               </a>
               <button
@@ -373,113 +374,12 @@
         </div>
         <div class="ww-section ww-rsvp-detail text-white" id="rsvp">
           <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
-            <div class="col text-center">
-              <h2
-                class="h1 ww-title pb-3"
-                data-aos="zoom-in-down"
-                data-aos-duration="1000"
-              >
-                Θα χαρούμε να σας έχουμε κοντά μας
-              </h2>
-              <p>
-                Ενημερώστε μας για της παρουσία σας μέχρι 5 Αυγούστου
-                συμπληρώνοντας την παρακάτω φόρμα ή εναλλακτικά στα τηλέφωνα
-                6939938646 (Κωνσταντίνος) και 6985918999 (Χριστίνα)
-              </p>
-            </div>
-            <div class="row ww-rsvp-form">
-              <div class="col-md-10">
-                <div class="card-body">
-                  <form
-                    method="POST"
-                    action="https://script.google.com/macros/s/AKfycbzDLpG9NRW_LJliAr0nj1Ncd75BVuswk_rvHshlQYiVC1M_vOHk5AaWBt8FXdy8DgQ/exec"
-                  >
-                    <div class="row">
-                      <div class="col md-6 pb-3">
-                        <div class="form-group">
-                          <label for="name-input">Ονοματεπώνυμο*</label>
-                          <input
-                            class="form-control"
-                            id="name-input"
-                            type="text"
-                            name="FullName"
-                            required="required"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6 pb-3">
-                        <div class="form-group">
-                          <label for="email-input">Email*</label>
-                          <input
-                            class="form-control"
-                            id="email-input"
-                            type="email"
-                            name="Email"
-                            required="required"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col md-6 pb-3">
-                        <div class="form-group">
-                          <label for="guest-input"
-                            >Αριθμός Καλεσμένων (Έξτρα εκτός από εσάς)</label
-                          >
-                          <select
-                            class="form-control"
-                            id="guest-input"
-                            name="#ExtraGuests"
-                          >
-                            <option value="1">Ένα</option>
-                            <option value="2">Δύο</option>
-                            <option value="3">Τρία</option>
-                            <option value="4">Τέσσερα</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6 pb-3">
-                        <div class="form-group">
-                          <label for="events-input">Θα είμαι εκεί</label>
-                          <select
-                            class="form-control"
-                            id="events-input"
-                            name="Are you joining?"
-                          >
-                            <option value="all-events">Τελετή & Δεξίωση</option>
-                            <option value="wedding-ceremony">Τελετή</option>
-                            <option value="party only">Δεξίωση</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="form-group">
-                          <label for="message-input">Μήνυμα</label>
-                          <textarea
-                            class="form-control"
-                            id="message-input"
-                            name="Full Message"
-                            rows="4"
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col text-center">
-                        <button
-                          class="btn btn-primary btn-submit"
-                          type="submit"
-                        >
-                          Αποστολή Απάντησης
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+            <div class="container" id="ff-compose"></div>
+            <script
+              async
+              defer
+              src="https://formfacade.com/include/111780097859131683267/form/1FAIpQLSe4w7nLFtgxyIMAx_8d8F6oVROfSErqPnKTMt2IgEhOAD31iw/bootstrap.js?div=ff-compose"
+            ></script>
           </div>
         </div>
         <div class="ww-footer bg-light">
